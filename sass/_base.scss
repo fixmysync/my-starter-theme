@@ -1,0 +1,106 @@
+/* Global Classes / Wordpress Specific */
+.aligncenter    { text-align: center; margin: 0 auto; }
+.alignleft      { float: left; }
+.alignright     { float: right; }
+img.alignleft     { padding-right: 5px;}
+img.alignright    { padding-left: 5px; }
+.clear        { width:100%; float:left; clear:both;}
+
+/* =============================================================================
+                   Default Styling 
+   ========================================================================== */
+
+body {
+    
+}
+
+
+.wrapper {
+   
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    outline: none;
+    border: none;
+    background: $navy;
+    color: $white;
+    text-transform: uppercase;
+    border-radius: 4px;
+    padding: 0.8em 1.4em;
+    white-space: nowrap;
+    @include transition(all 0.6s ease-in-out);
+}
+
+header {
+   
+}
+
+.innerWrapper {
+
+}
+
+.centerContent {
+    width: 80%;
+    margin: 0 auto;
+    clear: both;
+}
+
+
+
+/* ==============================================================================================================
+                           NAVIGATION 
+   =========================================================================================================== */
+  
+   nav {
+       ul.menu {
+           padding: 0;
+           margin: 0;
+           text-align: center;
+       }
+       li {
+           display: inline-block;
+           white-space: nowrap;
+           margin-right: -5px;
+           padding: 0.73em 0;
+           background: $black;
+
+           &:hover a {
+               color: $navy;
+           }
+           
+           a {
+               text-transform: uppercase;
+               font-size: 20px;
+               padding: 1.2em 1.5em;
+           }
+       }
+   }//end of nav styling
+
+   //for sticky nav
+   header.sticky {
+       nav {
+           position: fixed;
+           top: 0;
+           left: 0;
+           right: 0;
+           margin: 0 auto;
+           z-index: 999999;
+       }
+   }
+
+   /* ==============================================================================================================
+                              FOOTER 
+      =========================================================================================================== */
+
+      footer {
+          padding: 1% 0;
+          clear: both;
+
+          p.copyright {
+              text-align: center;
+          }
+      }
